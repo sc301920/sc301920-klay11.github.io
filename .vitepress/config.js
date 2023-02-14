@@ -5,6 +5,14 @@ const baseGroupItems = [
   { text: '数据结构', link: '/base/dataStructure/array/index' },
   { text: '算法', link: '/base/algorithm/index' },
   { text: '设计模式', link: '/base/designPattern/工厂模式' },
+  { text: '计算机网络', link: '/base/network/网络体系' },
+]
+
+const networkItems = [
+  { text: '网络体系', link: '/base/network/网络体系' },
+  { text: '传输层协议', link: '/base/network/传输层协议' },
+  { text: 'HTTP', link: '/base/network/HTTP' },
+  { text: 'web安全', link: '/base/network/web安全' },
 ]
 
 const dataStructureItems = [
@@ -47,7 +55,7 @@ const designPatternItems = [
 const FrontGroupItems = [
   { text: 'HTML', link: '/front/html/index' },
   { text: 'CSS', link: '/front/css/index' },
-  { text: 'JS', link: '/front/js/index' },
+  { text: 'JS', link: '/front/js/数据类型' },
 ]
 
 const htmlItems = [
@@ -64,6 +72,7 @@ const htmlItems = [
   { text: 'webSocket', link: '/front/html/webSocket' },
   { text: 'webWorkers', link: '/front/html/webWorkers' },
   { text: 'webRTC', link: '/front/html/webRTC' },
+  { text: '浏览器工作原理', link: '/front/html/浏览器工作原理' }
 ]
 
 const cssItems = [
@@ -86,9 +95,23 @@ const jsItems = [
   { text: '声明提升', link: '/front/js/声明提升' },
   { text: '作用域', link: '/front/js/作用域' },
   { text: '块作用域', link: '/front/js/块作用域' },
+  { text: '闭包', link: '/front/js/闭包' },
   { text: '执行上下文栈', link: '/front/js/执行上下文栈' },
+  { text: 'this', link: '/front/js/this' },
   { text: '内存管理', link: '/front/js/内存管理' },
   { text: '事件循环机制', link: '/front/js/事件循环机制' },
+  { text: 'promise', link: '/front/js/promise' },
+  { text: '面向对象', link: '/front/js/面向对象' },
+  { text: '类', link: '/front/js/类' },
+  { text: '浏览器的工作原理', link: '/front/js/浏览器的工作原理' },
+  { text: 'http缓存', link: '/front/js/http缓存' },
+  { text: '前端缓存', link: '/front/js/前端缓存' },
+  { text: '监视api', link: '/front/js/监视api' },
+  { text: 'blob', link: '/front/js/blob' },
+  { text: '全局api', link: '/front/js/全局api' },
+  { text: '特殊的函数', link: '/front/js/特殊的函数' },
+  { text: '异步编程', link: '/front/js/异步编程' },
+  { text: '事件流', link: '/front/js/事件流' },
 ]
 /**
  * @type {import('vitepress-theme-vue').SidebarGroup}
@@ -97,6 +120,7 @@ const baseSidebar = [
   { text: '数据结构', items: dataStructureItems },
   { text: '算法', items: algorithmItems },
   { text: '设计模式', items: designPatternItems },
+  { text: '计算机网络', items: networkItems },
 ]
 
 const frontSidebar = [
