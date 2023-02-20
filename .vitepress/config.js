@@ -113,6 +113,10 @@ const jsItems = [
   { text: '异步编程', link: '/front/js/异步编程' },
   { text: '事件流', link: '/front/js/事件流' },
 ]
+const projectItems = [
+  { text: 'vite', link: '/工程化/vite/index' },
+]
+
 /**
  * @type {import('vitepress-theme-vue').SidebarGroup}
  */
@@ -129,12 +133,16 @@ const frontSidebar = [
   { text: 'js', items: jsItems },
 ]
 
+const projectSidebar = [
+  { text: 'vite', items: projectItems },
+]
 /**
  * @type {import('vitepress-theme-vue').MultiSidebarConfig}
  */
 const sidebar = {
   '/base': baseSidebar,
   '/front': frontSidebar,
+  '/工程化':projectSidebar
 }
 
 /**
@@ -154,6 +162,13 @@ const nav = [
       { text: '', items: FrontGroupItems },
     ],
     activeMatch: `^/front/`
+  },
+  {
+    text: '😾前端工程化',
+    items: [
+      { text: '', items: projectItems },
+    ],
+    activeMatch: `^/工程化/`
   }
 ]
 
